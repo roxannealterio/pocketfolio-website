@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Log in | Pocketfolio</title>
+<meta name="description" content="Log in to your Pocketfolio account to manage your subscription or delete your account.">
+<link rel="canonical" href="https://pocketfolio.com.au/account/">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pocketfolio">
+<meta property="og:locale" content="en_AU">
+<meta property="og:url" content="https://pocketfolio.com.au/account/">
+<meta property="og:title" content="Log in | Pocketfolio">
+<meta property="og:description" content="Log in to your Pocketfolio account to manage your subscription or delete your account.">
+<meta property="og:image" content="https://pocketfolio.com.au/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pocketfolio: see your whole financial life in one place">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Log in | Pocketfolio">
+<meta name="twitter:description" content="Log in to your Pocketfolio account to manage your subscription or delete your account.">
+<meta name="twitter:image" content="https://pocketfolio.com.au/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#18181B">
+<link rel="preload" href="/fonts/HostGrotesk.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Host Grotesk';src:url('/fonts/HostGrotesk.woff2') format('woff2');font-weight:300 800;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Host Grotesk';src:url('/fonts/HostGrotesk-ext.woff2') format('woff2');font-weight:300 800;font-display:swap;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+
+<style>
+:root{--bg:#18181B;--s1:#202024;--line:#3A3A41;--fg:#F2F2F3;--mut:#9C9CA3;--mint:#7CF2C2;--ink:#0B1F17;--err:#FF8A80}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--bg);color:var(--fg);font-family:'Host Grotesk',system-ui,-apple-system,sans-serif;display:flex;flex-direction:column}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px max(16px,4vw)}
+.wm{font-weight:700;font-size:22px;letter-spacing:-.04em;color:var(--fg);text-decoration:none}.wm i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--mint);margin-left:2px}
+header a.g{color:var(--mut);text-decoration:none;font-size:15px}
+main{flex:1;display:grid;place-items:center;padding:24px 16px 60px}
+.card{width:100%;max-width:400px}
+h1{font-weight:600;letter-spacing:-.03em;font-size:30px;margin:0 0 8px}
+p{color:var(--mut);line-height:1.5;margin:0 0 18px}
+label{display:block;font-size:14px;color:var(--mut);margin:14px 0 6px}
+input{width:100%;height:54px;border-radius:14px;border:1.5px solid var(--line);background:var(--s1);color:var(--fg);padding:0 16px;font:inherit;font-size:16px;outline:none}
+input:focus{border-color:var(--mint)}
+button,.btn{display:block;width:100%;margin-top:14px;height:54px;border-radius:14px;border:0;background:var(--mint);color:var(--ink);font:inherit;font-weight:600;font-size:16px;cursor:pointer;text-align:center;line-height:54px;text-decoration:none}
+button.ghost,.btn.ghost{background:transparent;color:var(--fg);border:1.5px solid var(--line)}
+button.danger{background:transparent;color:var(--err);border:1.5px solid #5a2f2f}
+button:disabled{opacity:.55;cursor:default}
+.link{background:none;border:0;color:var(--mint);height:auto;line-height:1.4;margin-top:16px;font-weight:500;font-size:15px;width:auto;padding:0}
+.msg{margin-top:14px;padding:12px 14px;border-radius:12px;background:var(--s1);border:1px solid var(--line);font-size:14px;line-height:1.45}
+.msg.err{border-color:#5a2f2f;color:var(--err)}
+.row{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}.row span:first-child{color:var(--mut)}
+.hidden{display:none}
+footer{text-align:center;color:var(--mut);font-size:13px;padding:20px}footer a{color:var(--mut)}
+</style></head><body>
+<header><a class="wm" href="/">pocketfolio<i></i></a><a class="g" href="/support/">Help</a></header>
+<main><div class="card">
+
+<section id="v-login" class="hidden">
+  <h1>Log in</h1>
+  <p>Use the email and password from the Pocketfolio app.</p>
+  <form id="f-login">
+    <label for="em">Email</label><input id="em" type="email" autocomplete="email" required>
+    <label for="pw">Password</label><input id="pw" type="password" autocomplete="current-password" required>
+    <button type="submit">Log in</button>
+  </form>
+  <button class="link" id="b-magic">Signed up with Apple or Google? Email me a sign-in link</button><br>
+  <button class="link" id="b-forgot">Forgot your password?</button>
+  <div id="m-login" class="msg hidden" role="status"></div>
+  <p style="margin-top:28px">New to Pocketfolio? Accounts are created in the app.</p>
+  <a class="btn ghost" href="https://apps.apple.com/au/app/pocketfolio/id6828309425">Download on the App Store</a>
+</section>
+
+<section id="v-reset" class="hidden">
+  <h1>Choose a new password</h1>
+  <form id="f-reset">
+    <label for="npw">New password</label><input id="npw" type="password" autocomplete="new-password" minlength="10" required>
+    <button type="submit">Save password</button>
+  </form>
+  <div id="m-reset" class="msg hidden" role="status"></div>
+</section>
+
+<section id="v-acct" class="hidden">
+  <h1 id="hi">Your account</h1>
+  <p>Manage your Pocketfolio account. Everything else is in the app.</p>
+  <div class="row"><span>Email</span><span id="a-email"></span></div>
+  <div class="row"><span>Signed in with</span><span id="a-via"></span></div>
+  <a class="btn" href="pocketfolio://">Open Pocketfolio</a>
+  <a class="btn ghost" href="https://apps.apple.com/account/subscriptions">Manage your subscription</a>
+  <button class="ghost" id="b-out">Log out</button>
+  <h2 style="font-size:18px;margin:36px 0 6px;font-weight:600">Delete your account</h2>
+  <p>This permanently deletes your Pocketfolio account and everything in it, stops bank data sharing and removes saved connections. It doesn't cancel an App Store subscription, so cancel that first.</p>
+  <label for="cf">Type DELETE to confirm</label><input id="cf" autocomplete="off">
+  <button class="danger" id="b-del" disabled>Delete my account</button>
+  <div id="m-acct" class="msg hidden" role="status"></div>
+</section>
+
+<section id="v-gone" class="hidden">
+  <h1>Your account is deleted</h1>
+  <p>Your Pocketfolio account and its data have been deleted. Thanks for trying Pocketfolio.</p>
+  <a class="btn ghost" href="/">Back to pocketfolio.com.au</a>
+</section>
+
+</div></main>
+<footer><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="mailto:support@pocketfolio.com.au">support@pocketfolio.com.au</a></footer>
+<script src="/js/supabase.js"></script>
+<script>
+(function(){
+var URL_='https://kxwehsorunyhibeouhvc.supabase.co', KEY='sb_publishable_m3dykvVZ1njBx_vC_77d2Q_i3wHt6nM', HERE=location.origin+'/account/';
+var $=function(id){return document.getElementById(id)};
+function show(v){['v-login','v-reset','v-acct','v-gone'].forEach(function(x){$(x).classList.toggle('hidden',x!==v)})}
+function say(id,t,err){var m=$(id);m.textContent=t;m.classList.remove('hidden');m.classList.toggle('err',!!err)}
+function nice(e){var m=(e&&e.message)||'';if(/Invalid login/i.test(m))return 'That email and password don\u2019t match. Check them and try again.';if(/Email not confirmed/i.test(m))return 'Confirm your email in the app first, then log in here.';if(/rate|too many/i.test(m))return 'Too many tries. Wait a minute and try again.';if(/fetch|network/i.test(m))return 'You seem to be offline. Check your connection and try again.';return m||'Something went wrong. Please try again.'}
+if(!window.supabase){show('v-login');say('m-login','Couldn\u2019t load the log-in. Refresh the page to try again.',true);return}
+var sb=window.supabase.createClient(URL_,KEY,{auth:{persistSession:true,detectSessionInUrl:true,flowType:'pkce'}});
+var recovering=false;
+function render(s){if(recovering)return show('v-reset');if(!s)return show('v-login');var u=s.user,p=(u.app_metadata&&u.app_metadata.provider)||'email';
+ $('a-email').textContent=u.email||'';$('a-via').textContent=p==='apple'?'Apple':p==='google'?'Google':'Email and password';
+ var n=u.user_metadata&&(u.user_metadata.name||u.user_metadata.full_name);$('hi').textContent=n?('Hi '+String(n).split(' ')[0]):'Your account';show('v-acct')}
+sb.auth.onAuthStateChange(function(ev,s){if(ev==='PASSWORD_RECOVERY')recovering=true;render(s)});
+var q=new URLSearchParams(location.search+'&'+location.hash.slice(1));var le=q.get('error_description')||q.get('error');
+sb.auth.getSession().then(function(r){render(r.data.session);if(r.error||le){show('v-login');say('m-login',(/expired|invalid/i.test(le||'')?'That link has expired or was already used. ':'That link didn\u2019t work. ')+'Request a new one below and open it on this device.',true);history.replaceState(null,'',location.pathname)}});
+$('f-login').addEventListener('submit',function(e){e.preventDefault();var b=this.querySelector('button');b.disabled=true;b.textContent='Logging in\u2026';
+ sb.auth.signInWithPassword({email:$('em').value.trim(),password:$('pw').value}).then(function(r){if(r.error)throw r.error}).catch(function(x){say('m-login',nice(x),true)}).finally(function(){b.disabled=false;b.textContent='Log in'})});
+$('b-magic').addEventListener('click',function(){var em=$('em').value.trim();if(!em){say('m-login','Enter your email above first.',true);$('em').focus();return}
+ sb.auth.signInWithOtp({email:em,options:{shouldCreateUser:false,emailRedirectTo:HERE}}).then(function(r){if(r.error)throw r.error;say('m-login','Check your email for a sign-in link. Open it on this device.')}).catch(function(x){say('m-login',/not found|signups not allowed/i.test(x.message||'')?'There\u2019s no Pocketfolio account for that email.':nice(x),true)})});
+$('b-forgot').addEventListener('click',function(){var em=$('em').value.trim();if(!em){say('m-login','Enter your email above first.',true);$('em').focus();return}
+ sb.auth.resetPasswordForEmail(em,{redirectTo:HERE}).then(function(r){if(r.error)throw r.error;say('m-login','If there\u2019s an account for that email, we\u2019ve sent a link to reset your password. Open it on this device.')}).catch(function(x){say('m-login',nice(x),true)})});
+$('f-reset').addEventListener('submit',function(e){e.preventDefault();sb.auth.updateUser({password:$('npw').value}).then(function(r){if(r.error)throw r.error;recovering=false;say('m-reset','Password saved. You can log in to the app with it now.');return sb.auth.getSession()}).then(function(r){setTimeout(function(){render(r&&r.data.session)},1200)}).catch(function(x){say('m-reset',nice(x),true)})});
+$('b-out').addEventListener('click',function(){sb.auth.signOut({scope:'local'}).then(function(){show('v-login')})});
+$('cf').addEventListener('input',function(){$('b-del').disabled=this.value.trim()!=='DELETE'});
+$('b-del').addEventListener('click',function(){var b=this;b.disabled=true;b.textContent='Deleting\u2026';
+ sb.functions.invoke('account',{body:{action:'delete'}}).then(async function(r){if(r.error||(r.data&&r.data.error)){var m=r.data&&r.data.error;try{var b=r.error&&r.error.context&&await r.error.context.json();if(b&&b.error)m=b.error}catch(e){}throw new Error(m||'Couldn\u2019t delete your account. Please try again.')}return sb.auth.signOut({scope:'local'})}).then(function(){show('v-gone')}).catch(function(x){say('m-acct',nice(x),true);b.disabled=false;b.textContent='Delete my account'})});
+})();
+</script></body></html>
